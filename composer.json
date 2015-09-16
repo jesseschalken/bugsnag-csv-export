@@ -1,0 +1,17 @@
+{
+  "name": "jesseschalken/bugsnag-csv-export",
+  "description": "Command line script to export events from Bugsnag as CSV",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jesse Schalken",
+      "email": "me@jesseschalken.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "6.1.0",
+    "docopt/docopt": "1.0.0",
+    "jesseschalken/pure-json": "1.2"
+  }
+}
