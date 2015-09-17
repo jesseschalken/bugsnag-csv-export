@@ -54,7 +54,7 @@ function to_csv(array $data) {
     foreach ($data as $row) {
         $row = flatten_array($row);
         $rows[] = $row;
-        $merged = array_replace($merged, $row);
+        $merged = $merged ? array_intersect_key($merged, $row) : $row;
     }
     $columns = array_keys($merged);
     $result = format_csv_row($columns) . "\n";
